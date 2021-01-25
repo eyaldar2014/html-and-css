@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <h1>Create an Account</h1>
+  <form>
+    <label>Email:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+    <label>Password:</label><br>
+    <input type="text" id="password" name="password"><br><br>
+    <label>Age:</label><br>
+    <select id="age" name="age">
+      <option value="default select age">Select Age</option>
+    </select><br>
+    <p>Tell us a little bit about yourself: <br>
+    <textarea rows="5" cols="50" name="comment" form="usrform"></textarea><br>
+    </p>
+    <input type="checkbox" id="terms of service" name="termsofservice" value="agree">
+    <label> I agree to the <a href="https://en.wikipedia.org/wiki/Terms_of_service" 
+    target="_blank">terms of service</a></label><br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
