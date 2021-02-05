@@ -5,6 +5,132 @@ box-sizing: border-box;
 }
 
 body{
-  background: grey
+  background-color: var(--orange-color);
 }
 
+/* section */
+
+/* colors primary secondary dark light */
+/* varibles what is root? this is the root */
+:root{
+  --red-color: #E27D60;
+  --blue-color: #85CDCA;
+  --green-color: #41B3A3;
+  --orange-color: #e8a87c;
+  --purpule-color: #c38d9e;
+  --cream-color: #feffff;
+}
+
+
+
+
+
+
+/* list including ul, li, a */
+/* buttons , a in a div , hover , opacity*/
+
+
+
+
+/* padding py-1, py-2, py-3, p1, p2, p3*/
+
+
+
+/* fonts 15-25px , sans serif font-size*/
+@font-face {
+  font-family: portal;
+  src: url(/my_own_website/fonts/portal/1/Arizonia-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: portal2;
+  src: url(/my_own_website/fonts/portal/2/HerrVonMuellerhoff-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: normaly;
+  src: url(/my_own_website/fonts/text/normal/DancingScript-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: big;
+  src: url(/my_own_website/fonts/text/bigger/Cookie-Regular.ttf);
+  font-weight: 400;
+}
+
+
+/* p, h1, h2, h3, h4, h5, h6 */
+p, h4, h5, h6{
+  font-family: normaly;
+  size: 2rem;
+}
+
+h1, h2, h3{
+  font-family: portal;
+  size: 10rem;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#portal{
+  height: 100vh;
+  position: relative;
+}
+
+.bg{
+  background: url(/images/portal/portal.jpg) no-repeat center center/cover ;
+  height: 100vh;
+  width: 90vw;
+  position: absolute;
+  left: calc(50% - 45vw) ;
+  top: 0;
+}
+
+#portal .portal-container{
+  position: absolute;
+  height: 80vh;
+  width: 40vw;
+  left: calc(50% - 20vw) ;
+  top: 30%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--cream-color);
+}
+
+#portal .portal-box{
+  display: flex;
+}
+
+#portal .portal-container .logo{
+  background: url(/images/portal/logo.jpg);
+  z-index: 1;
+  width: 30px;
+  height: 100px;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+
+#portal .portal-container h1{
+  font-family: portal;
+  size: 100rem;
+}
+
+#portal .portal-container h2{
+  font-size: 3rem;
+}
+
+.portal-btn a{
+  color: var(--cream-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portal-btn a:hover{
+  text-decoration: underline;
+}
